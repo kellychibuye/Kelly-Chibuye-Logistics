@@ -21,6 +21,9 @@ function SignUp(props) {
     }]
 
     return (
+
+
+        
         <div>
             <View>
                 <Router>
