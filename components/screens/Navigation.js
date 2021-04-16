@@ -7,13 +7,15 @@ import Home from "./Home";
 import UserDashBoard from "./UserDashBoard";
 
 function Navigation(props) {
+  
     return (
       <View >
-       
+       <header>
         <Router>
                
-                <Link exact to="/signup" >Sign Up</Link>
-                <Link exact to="/" >Sign In</Link>
+                <Link  exact to="/signup" >Sign Up </Link>
+                
+                <Link  exact to="/" >  || Sign In</Link>
                 
               <Switch> 
                
@@ -23,7 +25,7 @@ function Navigation(props) {
                  <Route exact  path="/" component={signin}/>
             </Switch>
         </Router>
-
+    </header>
 
       </View>
     );
@@ -59,5 +61,8 @@ const styles = StyleSheet.create({
     text:{
        
         marginLeft:"35%"
+     },
+     space:{
+       paddingLeft:"10px"
      }
   });

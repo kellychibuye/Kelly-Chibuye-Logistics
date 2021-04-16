@@ -12,9 +12,9 @@ function SignIn({navigation}) {
         <div>
           <View style={styles.container}>
            <Router>
-                <View paddingLeft="10%"><h1>Kelly Chibuye Logistics</h1></View>
+                <View paddingLeft="10%"><h1>Goeffrey Zed Trasporter's</h1></View>
                 
-                <Image style={styles.Img} source={require('../../assets/images/logo.jpg')} />
+                <Image style={styles.Img} source={require('../../assets/images/Logo1.jpeg')} />
               
                 <Text style={styles.text}> <h1>SIGN IN</h1> </Text>
                <form>
@@ -28,7 +28,7 @@ function SignIn({navigation}) {
                     <TextInput style={styles.imput} for="Password" secureTextEntry={true} placeholder="  Please enter Passowrd"/>
                 </View>
                 <br/>
-          <Link exact to="/Home" ><Button type="submit" title="SIGN IN"> </Button></Link>
+          <Link exact to="/Home" ><Button  style={styles.btn} type="submit" title="SIGN IN"> </Button></Link>
 
                 </form>
                 <br/>
@@ -58,7 +58,7 @@ export default SignIn;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: 'grey',
       alignItems: '',
       justifyContent: '',
       margin:"65px"
@@ -71,11 +71,16 @@ const styles = StyleSheet.create({
     imput:{
         border:" solid black",
         borderRadius:"15px",
-        height:"35px"
+        height:"35px",
+        backgroundColor: '#fff',
 
     },
     text:{
        
        marginLeft:"40%"
-    } 
+    } ,
+    btn:{
+       
+        backgroundColor: 'black',
+     }
   });

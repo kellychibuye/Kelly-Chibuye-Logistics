@@ -3,48 +3,43 @@ import { View,Text, TextInput, Button,StyleSheet,Image } from 'react-native';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
 
 import Footer from "../shared/Footer";
-import UserDashBoard from "./UserDashBoard";
+import SignIn from "./SignIn";
 
 
 function Home(props) {
     return (
       <View >
-         <Text><h3>Welcome to .....</h3></Text>
+        
          <View>
-             <h1>Kelly Chibuye Logistics</h1></View>
-            <Image style={styles.Ig} source={require('../../assets/images/logo.jpg') }  />
+             <h1>Goeffrey Zed Trasporter's</h1></View>
+            
            
             <View>
-                <Text><h3>Book a An Appointment with Us.....</h3></Text>
                
-                <br/>
                
-                <Image style={styles.Img} source={require('../../assets/images/Truck1.jpeg') }  />
+              
+               
+                <Image style={styles.Img} source={require('../../assets/images/Truck6.jpeg') }  />
                 <br/>
                 <Link exact to="/Userrequest" ><Button type="submit" title="Hire Care"> </Button></Link>
                     <br/>
-                <Image style={styles.Img} source={require('../../assets/images/Truck2.jpeg') }  />
+                <Image style={styles.Img} source={require('../../assets/images/Truck5.jpeg') }  />
                 <br/>
                 <Link exact to="/Userrequest" ><Button type="submit" title="Hire Care"> </Button></Link>
                     <br/>
-                <Image style={styles.Img} source={require('../../assets/images/Truck3.jpeg') }  />
+                <Image style={styles.Img} source={require('../../assets/images/Truck7.jpeg') }  />
                 <br/>
                 <Link exact to="/Userrequest" ><Button type="submit" title="Hire Care"> </Button></Link>
                     <br/>
                     <Image style={styles.Img} source={require('../../assets/images/Truck4.jpeg') }  />
                 <br/>
-                <Link exact to="/Userrequest" ><Button type="submit" title="Hire Care"> </Button></Link>
+                <Link exact to="/Userrequest" ><Button type="submit" title="Hire Care" backgroundColor="black"> </Button></Link>
                     <br/>
 
             </View>
 
 
-            <Router>
-<Link exact to="/Userrequest" ><Button type="submit" title="SIGN IN"> </Button></Link>  
-    <Switch> 
-      <Route exact  path="/Userrequest" component={UserDashBoard}/>
-  </Switch>
-</Router>
+            <Link to="/" ><Button type="submit" title="Log Out"> </Button></Link>
 
             <Footer/>
       </View>
@@ -56,7 +51,7 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: 'grey',
       alignItems: '',
       justifyContent: '',
     },
@@ -66,7 +61,7 @@ const styles = StyleSheet.create({
        
     },
     Ig:{
-        height:'90px',
+        height:'50px',
         width:'100%',
        
     },

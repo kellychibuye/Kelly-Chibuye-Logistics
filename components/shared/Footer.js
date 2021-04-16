@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'black',
       alignItems: '',
       justifyContent: '',
-      textColor:'white',
+      color:'white',
       width:'100%'
       
     },

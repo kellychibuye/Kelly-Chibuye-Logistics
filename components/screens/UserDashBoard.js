@@ -13,15 +13,16 @@ const Stack = createStackNavigator();
 const UserDashBoard=(props)=> {
 
   function DoSet(){
-    setInterval(() => {
-      <Text> Transaction is Approved</Text>
+    setTimeout(() => {
+     
     }, 3000);
+    
   }
     return (
       <View> 
-        <View paddingLeft="10%"><h1>Kelly Chibuye Logistics</h1></View>
+        <View paddingLeft="10%"><h1>Goeffrey Zed Trasporter's</h1></View>
         <Text>Dash Board</Text>
-         <Image style={styles.Img} source={require('../../assets/images/logo.jpg')} />
+         <Image style={styles.Img} source={require('../../assets/images/Logo1.jpeg')} />
     
     
     <div>
@@ -31,8 +32,8 @@ const UserDashBoard=(props)=> {
       
      
       <Text style={styles.text}> <h3>User Request being Processed......</h3> </Text>
-   <Text>{Doset()}</Text>
-     
+      <Text> Transaction is Approved</Text>
+      <br/>
       <Footer/> 
   </View>
  
@@ -50,7 +51,7 @@ export default UserDashBoard;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'grey',
     alignItems: '',
     justifyContent: '',
   },
@@ -67,6 +68,6 @@ const styles = StyleSheet.create({
   },
   text:{
      
-      marginLeft:"35%"
+      marginLeft:"30%"
    }
 });
